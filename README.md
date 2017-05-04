@@ -1,6 +1,27 @@
 # dart_util
 
-A library for Dart developers. 
+A library for Dart developers. Implementing usefull functions not available in Dart language. 
+
+Current Punycode functions adapted from Java Script code [Punycode.js](https://github.com/bestiejs/punycode.js)
+
+## API
+
+### `decode(string)`
+
+Converts a Punycode string of ASCII symbols to a string of Unicode symbols.
+
+### `encode(string)`
+
+Converts a string of Unicode symbols to a Punycode string of ASCII symbols.
+
+### `urlDecode(input)`
+
+Converts a Punycode string representing a domain name to Unicode. Only the Punycoded parts of the input will be converted, i.e. it doesn’t matter if you call it on a string that has already been converted to Unicode.
+
+### `urlEncode(input)`
+
+Converts a Unicode string representing a domain name to Punycode. Only the non-ASCII parts of the input will be converted, i.e. it doesn’t matter if you call it with a domain that’s already in ASCII.
+
 
 ## Usage
 
